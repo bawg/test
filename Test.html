@@ -19,20 +19,16 @@
     <div id="map"></div>
     <script>
 // This example adds three custom symbols to a polyline.
-
 function initMap() {
   var map = new google.maps.Map(document.getElementById('map'), {
     zoom: 6,
     center: {lat: 20.291, lng: 153.027},
     mapTypeId: google.maps.MapTypeId.TERRAIN
   });
-
 // [START region_polyline]
 // Define the custom symbols. All symbols are defined via SVG path notation.
 // They have varying stroke color, fill color, stroke weight,
 // opacity and rotation properties.
-
-
   // Create the polyline and add the symbols via the 'icons' property.
   var line = new google.maps.Polyline({
     path: [{lat: 22.291, lng: 153.027}, {lat: 18.291, lng: 153.027}],
@@ -44,7 +40,6 @@ function initMap() {
   });
 // [END region_polyline]
 }
-
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?&callback=initMap&signed_in=true" async defer>
     </script>
