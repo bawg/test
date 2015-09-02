@@ -21,31 +21,28 @@
 // This example adds a predefined symbol (an arrow) to a polyline.
 // Setting offset to 100% places the arrow at the end of the line.
 
-function initMap() {
-  var map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 6,
-    center: {lat: 20.291, lng: 153.027},
-    mapTypeId: google.maps.MapTypeId.TERRAIN
-  });
+function initialize() {
+    var mapProp = {
+        center: new google.maps.LatLng(28.360012, 77.031527),
+        zoom: 18,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
 
-  // [START region_polyline]
-  // Define a symbol using a predefined path (an arrow)
-  // supplied by the Google Maps JavaScript API.
-  var lineSymbol = {
-    path: google.maps.SymbolPath.FORWARD_CLOSED_ARROW
-  };
-
-  // Create the polyline and add the symbol via the 'icons' property.
-  var line = new google.maps.Polyline({
-    path: [{lat: 22.291, lng: 153.027}, {lat: 18.291, lng: 153.027}],
-    icons: [{
-      icon: lineSymbol,
-      offset: '100%'
-    }],
-    map: map
-  });
-// [END region_polyline]
+    var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+    var myTrip=new Array();
+    myTrip.push(new google.maps.LatLng(28.360012,77.031527));
+    myTrip.push(new google.maps.LatLng(28.360124,77.031429));
+    myTrip.push(new google.maps.LatLng(28.361024,77.034129));
+    var flightPath=new google.maps.Polyline({
+        path:myTrip,
+        strokeColor:"#0000FF",
+        strokeOpacity:0.8,
+        strokeWeight:2
+    });
+    flightPath.setMap(map); 
 }
+
+google.maps.event.addDomListener(window, 'load', initialize);
 
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?&callback=initMap&signed_in=true" async defer>
