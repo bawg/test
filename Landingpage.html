@@ -1,0 +1,757 @@
+
+
+    <!DOCTYPE html>
+    <html lang="en-US" style="height: 100%;">
+
+    <head>
+        <title>
+
+        CSS Navigation Bar
+
+        </title>
+        <style>
+
+        a.topnav_css{background-color:#ffffff !important;c…
+
+        </style>
+        <meta charset="utf-8"></meta>
+        <meta content="width=device-width, initial-scale=1" name="viewport"></meta>
+        <meta content="HTML,CSS,XML,JavaScript,DOM,jQuery,ASP.NET,PHP,SQL,colors,tu…ding style sheets,active server pages,Web building,Webmaster" name="Keywords"></meta>
+        <meta content="Free HTML CSS JavaScript DOM jQuery XML AJAX Angular ASP .NET PHP SQL tutorials, references, web building examples" name="Description"></meta>
+        <link type="image/x-icon" href="/favicon.ico" rel="icon"></link>
+        <link href="/lib/w3.css" rel="stylesheet"></link>
+        <!--
+
+        <link rel="stylesheet" href="http://cdnjs.cloudfla…
+
+        -->
+        <script async="" src="//cse.google.com/adsense/search/async-ads.js"></script>
+        <script type="text/javascript" async="" src="http://www.google.com/cse/cse.js?cx=012971019331610648934:m2tou3_miwy"></script>
+        <script async="" type="text/javascript" src="http://www.googletagservices.com/tag/js/gpt.js"></script>
+        <script async="" src="//www.google-analytics.com/analytics.js"></script>
+        <script>
+
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObje…
+
+        </script>
+        <script type="text/javascript">
+
+        var googletag = googletag || {}; googletag.cmd = …
+
+        </script>
+        <script type="text/javascript">
+
+        // GPT slots var gptAdSlots = []; googletag.cm…
+
+        </script>
+        <link href="/stdtheme.css" type="text/css" rel="stylesheet"></link>
+        <style>
+
+        div.horizontal { width:100%; height:30px; backgro…
+
+        </style>
+        <link type="text/css" rel="stylesheet" charset="UTF-8" href="https://translate.googleapis.com/translate_static/css/translateelement.css"></link>
+        <script type="text/javascript" charset="UTF-8" src="https://translate.googleapis.com/translate_static/js/element/main.js"></script>
+        <script src="http://partner.googleadservices.com/gpt/pubads_impl_72.js" async=""></script>
+        <script type="text/javascript" charset="UTF-8" src="https://translate.googleapis.com/translate_static/js/element/27/element_main.js"></script>
+        <script src="http://www.google.com/jsapi?autoload=%7B%22modules%22%3A%5B%…k%2Fv2%2Fdefault.css%22%2C%22language%22%3A%22en%22%7D%5D%7D" type="text/javascript"></script>
+        <link type="text/css" href="http://www.google.com/uds/api/search/1.0/56f70d816baa48bdfe9284ebc883ad41/default+en.css" rel="stylesheet"></link>
+        <link type="text/css" href="http://www.google.com/cse/style/look/v2/default.css" rel="stylesheet"></link>
+        <script type="text/javascript" src="http://www.google.com/uds/api/search/1.0/56f70d816baa48bdfe9284ebc883ad41/default+en.I.js"></script>
+        <style type="text/css">
+
+        .gsc-control-cse { font-family: Arial, sans-serif…
+
+        </style>
+        <style type="text/css">
+
+        .gscb_a{display:inline-block;font:27px/13px arial,…
+
+        </style>
+        <script src="//pagead2.googlesyndication.com/pagead/expansion_embed.js?source=safeframe"></script>
+        <script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/osd.js"></script>
+    </head>
+    <body style="position: relative; min-height: 100%; top: 0px;">
+        <div class="w3-container top">
+            <a href="http://www.w3schools.com"></a>
+            <div class="w3-right toptext">
+
+            THE WORLD'S LARGEST WEB DEVELOPER SITE
+
+            </div>
+            ::after
+        </div>
+        <div id="topnav" class="w3-topnav w3-card-2 topnav" style="position: relative;">
+            <div style="overflow:auto;">
+                <div style="float:left;width:50%;overflow:hidden;height:44px">
+                    <a class="topnav-localicons w3-hide-large w3-left" onclick="open_menu()" href="javascript:void(0);">
+
+                    ☰
+
+                    </a>
+
+            <a class="topnav-icons fa fa-home w3-left" href="/default.asp"></a>
+            <a class="w3-hide-small" href="/html/default.asp">
+
+            HTML
+
+            </a>
+            <a class="active" href="/css/default.asp">
+
+            CSS
+
+            </a>
+            <a class="w3-hide-small" href="/js/default.asp">
+
+            JAVASCRIPT
+
+            </a>
+            <a class="w3-hide-small" href="/sql/default.asp">
+
+            SQL
+
+            </a>
+            <a class="w3-hide-small" href="/php/default.asp">
+
+            PHP
+
+            </a>
+            <a class="w3-hide-small" href="/bootstrap/default.asp">
+
+            BOOTSTRAP
+
+            </a>
+            <a class="w3-hide-small" href="/jquery/default.asp">
+
+            JQUERY
+
+            </a>
+            <a class="w3-hide-small" href="/angular/default.asp">
+
+            ANGULAR
+
+            </a>
+            <a class="w3-hide-small" href="/xml/default.asp">
+
+            XML
+
+            </a>
+        </div>
+        <div style="float:right;width:110px;overflow:hidden;height:44px;"></div>
+        <div class="w3-hide-small" style="float:right;width:30%;overflow:hidden;height:44px;"></div>
+    </div>
+    <div id="nav_tutorials" class="w3-dropnav w3-light-grey w3-card-2 w3-center"></div>
+    <div id="nav_references" class="w3-dropnav w3-light-grey w3-card-2 w3-center"></div>
+    <div id="nav_examples" class="w3-dropnav w3-light-grey w3-card-2 w3-center"></div>
+    <div id="nav_translate" class="w3-dropnav w3-light-grey w3-card-2 w3-center"></div>
+    <div id="nav_search" class="w3-dropnav w3-light-grey w3-card-2 w3-center"></div>
+    ::after
+
+</div>
+<div id="belowtopnav" class="w3-row w3-light-grey" style="padding-top: 0px;">
+
+    <div id="sidemenu" class="w3-col l2 m12" style="padding-top: 0px;">
+        <div id="sidemenuinner" class="w3-light-grey">
+            <a class="w3-closebtn w3-hide-large w3-large" style="padding:3px 12px;" onclick="close_menu()" href="javascript:void(0)">
+
+            ×
+
+            </a>
+
+        <h2 class="left"></h2>
+        <a class="menu_default" href="default.asp" target="_top">
+
+        CSS HOME
+
+        </a>
+        <a class="menu_css_intro" href="css_intro.asp" target="_top">
+
+        CSS Introduction
+
+        </a>
+        <a class="menu_css_syntax" href="css_syntax.asp" target="_top">
+
+        CSS Syntax
+
+        </a>
+        <a class="menu_css_selectors" href="css_selectors.asp" target="_top">
+
+        CSS Selectors
+
+        </a>
+        <a class="menu_css_howto" href="css_howto.asp" target="_top">
+
+        CSS How To
+
+        </a>
+        <a class="menu_css_background" href="css_background.asp" target="_top">
+
+        CSS Backgrounds
+
+        </a>
+        <a class="menu_css_text" href="css_text.asp" target="_top">
+
+        CSS Text
+
+        </a>
+        <a class="menu_css_font" href="css_font.asp" target="_top">
+
+        CSS Fonts
+
+        </a>
+        <a class="menu_css_link" href="css_link.asp" target="_top">
+
+        CSS Links
+
+        </a>
+        <a class="menu_css_list" href="css_list.asp" target="_top">
+
+        CSS Lists
+
+        </a>
+        <a class="menu_css_table" href="css_table.asp" target="_top">
+
+        CSS Tables
+
+        </a>
+        <a class="menu_css_boxmodel" href="css_boxmodel.asp" target="_top">
+
+        CSS Box Model
+
+        </a>
+        <a class="menu_css_border" href="css_border.asp" target="_top">
+
+        CSS Border
+
+        </a>
+        <a class="menu_css_outline" href="css_outline.asp" target="_top">
+
+        CSS Outline
+
+        </a>
+        <a class="menu_css_margin" href="css_margin.asp" target="_top">
+
+        CSS Margin
+
+        </a>
+        <a class="menu_css_padding" href="css_padding.asp" target="_top">
+
+        CSS Padding
+
+        </a>
+        <a class="menu_css_dimension" href="css_dimension.asp" target="_top">
+
+        CSS Dimension
+
+        </a>
+        <a class="menu_css_display_visibility" href="css_display_visibility.asp" target="_top">
+
+        CSS Display
+
+        </a>
+        <a class="menu_css_max-width" href="css_max-width.asp" target="_top">
+
+        CSS Max-width
+
+        </a>
+        <a class="menu_css_positioning" href="css_positioning.asp" target="_top">
+
+        CSS Position
+
+        </a>
+        <a class="menu_css_float" href="css_float.asp" target="_top">
+
+        CSS Float
+
+        </a>
+        <a class="menu_css_inline-block" href="css_inline-block.asp" target="_top">
+
+        CSS Inline-block
+
+        </a>
+        <a class="menu_css_align" href="css_align.asp" target="_top">
+
+        CSS Align
+
+        </a>
+        <a class="menu_css_combinators" href="css_combinators.asp" target="_top">
+
+        CSS Combinators
+
+        </a>
+        <a class="menu_css_pseudo_classes" href="css_pseudo_classes.asp" target="_top">
+
+        CSS Pseudo-class
+
+        </a>
+        <a class="menu_css_pseudo_elements" href="css_pseudo_elements.asp" target="_top">
+
+        CSS Pseudo-element
+
+        </a>
+        <a class="active" href="css_navbar.asp" target="_top">
+
+        CSS Navigation Bar
+
+        </a>
+        <a class="menu_css_image_gallery" href="css_image_gallery.asp" target="_top">
+
+        CSS Image Gallery
+
+        </a>
+        <a class="menu_css_image_transparency" href="css_image_transparency.asp" target="_top">
+
+        CSS Image Opacity
+
+        </a>
+        <a class="menu_css_image_sprites" href="css_image_sprites.asp" target="_top">
+
+        CSS Image Sprites
+
+        </a>
+        <a class="menu_css_mediatypes" href="css_mediatypes.asp" target="_top">
+
+        CSS Media Types
+
+        </a>
+        <a class="menu_css_attribute_selectors" href="css_attribute_selectors.asp" target="_top">
+
+        CSS Attr Selectors
+
+        </a>
+        <br></br>
+        <h2 class="left"></h2>
+        <a class="menu_css3_intro" href="css3_intro.asp" target="_top">
+
+        CSS3 Introduction
+
+        </a>
+        <a class="menu_css3_borders" href="css3_borders.asp" target="_top">
+
+        CSS3 Rounded Corners
+
+        </a>
+        <a class="menu_css3_border_images" href="css3_border_images.asp" target="_top">
+
+        CSS3 Border Images
+
+        </a>
+        <a class="menu_css3_backgrounds" href="css3_backgrounds.asp" target="_top">
+
+        CSS3 Backgrounds
+
+        </a>
+        <a class="menu_css3_colors" href="css3_colors.asp" target="_top">
+
+        CSS3 Colors
+
+        </a>
+        <a class="menu_css3_gradients" href="css3_gradients.asp" target="_top">
+
+        CSS3 Gradients
+
+        </a>
+        <a class="menu_css3_shadows" href="css3_shadows.asp" target="_top">
+
+        CSS3 Shadows
+
+        </a>
+        <a class="menu_css3_text_effects" href="css3_text_effects.asp" target="_top">
+
+        CSS3 Text
+
+        </a>
+        <a class="menu_css3_fonts" href="css3_fonts.asp" target="_top">
+
+        CSS3 Fonts
+
+        </a>
+        <a class="menu_css3_2dtransforms" href="css3_2dtransforms.asp" target="_top">
+
+        CSS3 2D Transforms
+
+        </a>
+        <a class="menu_css3_3dtransforms" href="css3_3dtransforms.asp" target="_top">
+
+        CSS3 3D Transforms
+
+        </a>
+        <a class="menu_css3_transitions" href="css3_transitions.asp" target="_top">
+
+        CSS3 Transitions
+
+        </a>
+        <a class="menu_css3_animations" href="css3_animations.asp" target="_top">
+
+        CSS3 Animations
+
+        </a>
+        <a class="menu_css3_multiple_columns" href="css3_multiple_columns.asp" target="_top">
+
+        CSS3 Multiple Columns
+
+        </a>
+        <a class="menu_css3_user_interface" href="css3_user_interface.asp" target="_top">
+
+        CSS3 User Interface
+
+        </a>
+        <a class="menu_css3_box-sizing" href="css3_box-sizing.asp" target="_top">
+
+        CSS3 Box Sizing
+
+        </a>
+        <br></br>
+        <h2 class="left"></h2>
+        <a class="menu_css_rwd_intro" href="css_rwd_intro.asp" target="_top">
+
+        RWD Intro
+
+        </a>
+        <a class="menu_css_rwd_viewport" href="css_rwd_viewport.asp" target="_top">
+
+        RWD Viewport
+
+        </a>
+        <a class="menu_css_rwd_grid" href="css_rwd_grid.asp" target="_top">
+
+        RWD Grid View
+
+        </a>
+        <a class="menu_css_rwd_mediaqueries" href="css_rwd_mediaqueries.asp" target="_top">
+
+        RWD Media Queries
+
+        </a>
+        <a class="menu_css_rwd_images" href="css_rwd_images.asp" target="_top">
+
+        RWD Images
+
+        </a>
+        <a class="menu_css_rwd_videos" href="css_rwd_videos.asp" target="_top">
+
+        RWD Videos
+
+        </a>
+        <a class="menu_css_rwd_frameworks" href="css_rwd_frameworks.asp" target="_top">
+
+        RWD Frameworks
+
+        </a>
+        <br></br>
+        <h2 class="left"></h2>
+        <a class="menu_css_examples" href="css_examples.asp" target="_top">
+
+        CSS Examples
+
+        </a>
+        <a class="menu_css_quiz" href="css_quiz.asp" target="_top">
+
+        CSS Quiz
+
+        </a>
+        <a class="menu_css_exam" href="css_exam.asp" target="_top">
+
+        CSS Certificate
+
+        </a>
+        <br></br>
+        <h2 class="left"></h2>
+        <a class="menu_css_reference" href="/cssref/default.asp" target="_top">
+
+        CSS Reference
+
+        </a>
+        <a class="menu_css_ref_selectors" href="/cssref/css_selectors.asp" target="_top">
+
+        CSS Selectors
+
+        </a>
+        <a class="menu_css_ref_aural" href="/cssref/css_ref_aural.asp" target="_top">
+
+        CSS Reference Aural
+
+        </a>
+        <a class="menu_css_websafe_fonts" href="/cssref/css_websafe_fonts.asp" target="_top">
+
+        CSS Web Safe Fonts
+
+        </a>
+        <a class="menu_css_units" href="/cssref/css_units.asp" target="_top">
+
+        CSS Units
+
+        </a>
+        <a class="menu_css_pxtoemconversion" href="/cssref/css_pxtoemconversion.asp" target="_top">
+
+        CSS PX-EM Converter
+
+        </a>
+        <a class="menu_css_colors" href="/cssref/css_colors.asp" target="_top">
+
+        CSS Colors
+
+        </a>
+        <a class="menu_css_colors_legal" href="/cssref/css_colors_legal.asp" target="_top">
+
+        CSS Color Values
+
+        </a>
+        <a class="menu_css_colornames" href="/cssref/css_colornames.asp" target="_top">
+
+        CSS Color Names
+
+        </a>
+        <a class="menu_css_colorsfull" href="/cssref/css_colorsfull.asp" target="_top">
+
+        CSS Color HEX
+
+        </a>
+        <a class="menu_css_colors_group" href="/cssref/css_colors_group.asp" target="_top">
+
+        CSS Color Groups
+
+        </a>
+        <a class="menu_css3_browsersupport" href="/cssref/css3_browsersupport.asp" target="_top">
+
+        CSS3 Browser Support
+
+        </a>
+    </div>
+
+</div>
+<div class="w3-col l10 m12">
+
+    <div class="w3-row w3-white">
+        <div id="main" class="w3-col l10 m12">
+            <div id="mainLeaderboard" style="overflow:hidden;">
+                <!--
+
+                 MainLeaderboard
+
+                -->
+                <div id="div-gpt-ad-1422003450156-2">
+                    <script type="text/javascript">
+
+                    googletag.cmd.push(function() { googletag.display(…
+
+                    </script>
+                    <div id="google_ads_iframe_/16833175/MainLeaderboard_0__container__" style="border: 0pt none; display: inline-block; width: 728px; height: 90px;">
+                        <iframe id="google_ads_iframe_/16833175/MainLeaderboard_0" width="728" height="90" frameborder="0" style="border: 0px none; vertical-align: bottom;" src="http://tpc.googlesyndication.com/safeframe/1-0-2/html/container.html#xpc=sf-gdn-exp-1&p=http%3A//www.w3schools.com" name="1-0-2;27353;<!doctype html><html><head></head><body leftMarg…,\"flash_ver\":\"18.0.0\"}}","reportCreativeGeometry":false}" scrolling="no" marginwidth="0" marginheight="0" data-is-safeframe="true">
+
+    #document
+        <!DOCTYPE html>
+        <html>
+
+    <head></head>
+    <body marginwidth="0" marginheight="0" topmargin="0" leftmargin="0">
+        <script type="text/javascript" async="" src="//tpc.googlesyndication.com/sodar/sbhK2lTE.js"></script>
+        <script>
+
+        (function(){var c=this,d=function(a){var b…
+
+        </script>
+        <a href="https://adclick.g.doubleclick.net/pcs/click?xai=AKAOjsvmeAic…l-cont-all-trial-120077385%26utm_content%3Dpuppyscrubber-gif" target="_blank">
+            <img width="728" border="0" height="90" alt="Advertisement" src="https://s0.2mdn.net/viewad/4371324/1-PuppyScrubbers_728x90_ZA_gif.gif"></img>
+
+</a>
+<script type="text/javascript">
+
+(function() {if (!window.GoogleTyFxhY || typeof wi…
+
+
+<style>
+
+div,ul,li{margin:0;padding:0;}.abgc{height:15px;po…
+
+</style>
+
+<div id="abgc" class="abgc" dir="ltr"></div>
+
+
+                                            var abgp={elp:document.getElementById('abgcp'),el:…
+
+                                            </script>
+                                            <iframe width="0" height="0" src="//tpc.googlesyndication.com/sodar/cTrvNaRi.html" style="display: none;"></iframe>
+                                        </body>
+                                    </html>
+                                </html>
+                            </iframe>
+                        </div>
+
+                    </div>
+                </div>
+                <h1></h1>
+                <div class="nav"></div>
+                <hr></hr>
+                <h2 style="text-align:center">
+
+                Demo: Navigation Bar
+
+                </h2>
+                <div class="horizontal"></div>
+                <br></br>
+                <span class="clearfix"></span>
+                <hr></hr>
+                <h2>
+
+                Navigation Bars
+
+                </h2>
+                <p>
+
+                Having easy-to-use navigation is important for any…
+
+                </p>
+                <p>
+
+                With CSS you can transform boring HTML menus into …
+
+                </p>
+                <hr></hr>
+                <h2>
+
+                Navigation Bar = List of Links
+
+                </h2>
+                <p>
+
+                A navigation bar needs standard HTML as a base.
+
+                </p>
+                <p>
+
+                In our examples we will build the navigation bar f…
+
+                </p>
+                <p>
+
+                A navigation bar is basically a list of links, so …
+
+                </p>
+                <div class="w3-example"></div>
+                <p>
+
+                Now let's remove the bullets and the margins and p…
+
+                </p>
+                <div class="w3-example"></div>
+                <p>
+
+                Example explained:
+
+                </p>
+                <ul></ul>
+                <p>
+
+                The code in the example above is the standard code…
+
+                </p>
+                <hr></hr>
+                <h2>
+
+                Vertical Navigation Bar
+
+                </h2>
+                <p>
+
+                To build a vertical navigation bar we only need to…
+
+                </p>
+                <div class="w3-example"></div>
+                <p>
+
+                Example explained:
+
+                </p>
+                <ul></ul>
+                <p></p>
+                <table class="lamp"></table>
+                <hr></hr>
+                <h2>
+
+                Horizontal Navigation Bar
+
+                </h2>
+                <p></p>
+                <p>
+
+                Both methods work fine, but if you want the links …
+
+                </p>
+                <h2>
+
+                Inline List Items
+
+                </h2>
+                <p>
+
+                One way to build a horizontal navigation bar is to…
+
+                </p>
+                <div class="w3-example"></div>
+                <p>
+
+                Example explained:
+
+                </p>
+                <ul></ul>
+                <h2>
+
+                Floating List Items
+
+                </h2>
+                <p>
+
+                In the example above the links have different widt…
+
+                </p>
+                <p>
+
+                For all the links to have an equal width, float th…
+
+                </p>
+                <div class="w3-example"></div>
+                <p>
+
+                Example explained:
+
+                </p>
+                <ul></ul>
+                <p></p>
+                <br></br>
+                <div class="nav"></div>
+            </div>
+            <div id="right" class="w3-col l2 m12"></div>
+            ::after
+        </div>
+        <div class="footer w3-container w3-white"></div>
+    </div>
+    ::after
+
+</div>
+<div id="nav_tutorials_content" style="display:none;"></div>
+
+<div id="nav_references_content" style="display:none;"></div>
+
+<div id="nav_examples_content" style="display:none;"></div>
+
+<div id="nav_translate_content" style="display:none"></div>
+
+<div id="nav_search_content" style="display:none"></div>
+
+<script src="/lib/w3schools_footer.js"></script>
+
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
+
+
+<div id="goog-gt-tt" class="skiptranslate" dir="ltr"></div>
+
+            <table class="gstl_50 gssb_c" cellspacing="0" cellpadding="0" style="width: 2px; display: none; top: 3px; position: absolute; left: -1px;"></table>
+            <iframe id="google_osd_static_frame_5273198726337" name="google_osd_static_frame" style="display: none; width: 0px; height: 0px;"></iframe>
+        </body>
+        <iframe style="display: none;" src=""></iframe>
+    </html>
+
