@@ -11,6 +11,18 @@ a:hover, a:active {
 table.lamp, table.reference{
     margin:16px 0;
 }
+
+/*login screen*/
+.main {
+    background-color:#8AC007;
+    /*height:68px;
+    padding-top:20px;
+    font-family:helvetica;
+    letter-spacing:4px;
+    line-height:50px;
+    overflow:hidden; */	
+}
+
 /*OPPSETT AV TOP, TOPNAV, SIDEMENU, MAIN, RIGHT OG FOOTER:*/
 .top {
     background-color:#ffffff;
