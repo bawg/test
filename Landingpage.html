@@ -217,10 +217,26 @@
                 </h2>
                 <p></p>
                 <p>
-
-                Both methods work fine, but if you want the links …
-
                 </p>
+                <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+                <script type="text/javascript" src="tweetie.js"></script>
+            
+            	<body>
+                <div class="example1">
+                    <div class="tweet"></div>
+                    <div class="button"></div>
+                </div>
+            
+                <script class="source" type="text/javascript">
+                    $('.example1 .tweet').twittie({
+                        dateFormat: '%b. %d, %Y',
+                        template: '{{tweet}} <div class="date">{{date}}</div>',
+                        count: 1,
+                        loadingText: 'Loading!'
+                    });
+                </script>
+
+
                 <h2>
 
                 Inline List Items
