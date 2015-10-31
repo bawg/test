@@ -2,11 +2,11 @@
 <input type="text" name="name" id="name">
 <button type="button" id="home" onclick="validate()" value="checkvalue">
 
-$.ajax({
-  type: "POST",
-  url: "pythoncode.py",
-  data: { param: text}
-}).done(function( o ) {
-   // do something
-});
+var xhr = new XMLHttpRequest();
+xhr.open("GET", "pythoncode.py?text=" + text, true);
+xhr.responseType = "JSON";
+xhr.onload = function(e) {
+  var arrOfStrings = JSON.parse(xhr.response);
+}
+xhr.send();
 </html>
