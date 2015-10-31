@@ -1,8 +1,12 @@
 <html>
 <input type="text" name="name" id="name">
 <button type="button" id="home" onclick="validate()" value="checkvalue">
-function validate(){
-    if (returnvalue=="test") alert(test)
-    else alert ("unsuccessful")
-}
+
+$.ajax({
+  type: "POST",
+  url: "pythoncode.py",
+  data: { param: text}
+}).done(function( o ) {
+   // do something
+});
 </html>
