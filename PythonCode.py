@@ -14,6 +14,9 @@ url = form.getvalue("url")
 callback = form.getvalue("callback")
 req = urllib2.Request(url) 
 response = urllib2.urlopen(req) 
+import ctypes  # An included library with Python install.
+ctypes.windll.user32.MessageBoxA(0, "Your text", "Your title", 1)
+
 try:
     data = response.read() 
     print callback + "(" + json.dumps(data)+ ")"
