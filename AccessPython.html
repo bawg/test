@@ -1,19 +1,18 @@
-<!DOCTYPE html>
 <html>
- <head>
-   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js" type="text/javascript"></script>
- </head>
- <body>
-  <d>
-   Whats the indication this works
-  </d>
-   <script type="text/javascript">
+    <head>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script type="text/javascript">
+            var jsonp_url = "getData.py";
+            var url = "http://api.education.com/service/service.php?f=schoolSearch&key=mykey&sn=sf&v=4&city=Atlanta&state=ga&Resf=json";
+            $.getJSON(jsonp_url + '?callback=?', {
+                url: url
+            }, function(data) {
+                console.log(data);
+                $('body').text(data);
+            });
+        </script>
+    </head>
 
-   $.getJSON('PythonCode.py', function(data) {
-    console.log('callback works');
-  });
-
-
-   </script>
- </body>
-</html>
+    <body>
+    </body>
+<html>
